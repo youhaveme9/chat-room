@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+*{
+    font-family:'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#cec9c9;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+}
+.main-window{
+    width: 90%;
+    max-width: 90%;
+    height: 70%;
+    background-color: #b1aeae;
+    margin: 50px auto;
+}
+.chat-window{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    overflow-y: auto;
+    background-color: rgb(201, 168, 231);
+    padding: 20px;
+}
+.message{
+    
+    max-width: 300px;
+    position: relative;
+    padding: 20px; 
+    border-radius: 4px; 
+    margin-bottom: 40px;
+}
+.incoming{
+    background-color: rgb(146, 189, 190);
+
+}
+.outgoing{
+    background-color: rgb(42, 162, 167);
+   margin-left: auto;
+}
+
+#message-send{
+    height: 40px;
+    width: 100%;
+    margin: auto;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.username{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 14px;
+}

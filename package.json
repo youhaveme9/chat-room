@@ -1,0 +1,19 @@
+{
+  "name": "ai_ml_chat_room",
+  "version": "1.0.0",
+  "description": "Chat room for AI ML department 2025",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server"
+  },
+  "author": "Roshan Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.3.2",
+    "sweetalert2": "^11.1.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
