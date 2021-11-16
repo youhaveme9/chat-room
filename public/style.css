@@ -1,45 +1,179 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
-*{
-    font-family:'Montserrat', sans-serif;
-    padding: 0;
+*
+{
     margin: 0;
+    padding: 2px;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+    
+    
 }
-body{
-    background-color:#cec9c9;
+@keyframes gradient 
+{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+body
+{
     height: 100vh;
+    background: linear-gradient(-45deg,#ff9777,#fc7aac,#60d5ff,#59fad4);
+    background-size: 400% 400%;
+    animation:gradient 15s ease infinite;
+    justify-content: center;
+    align-items: center;
 }
-h1{
-    text-align: center;
-}
-.main-window{
-    width: 90%;
-    max-width: 90%;
-    height: 70%;
-    background-color: #b1aeae;
-    margin: 50px auto;
-}
-.chat-window{
+
+.container
+{
+    width:auto;
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    height: 80%;
-    overflow-y: auto;
-    background-color: rgb(201, 168, 231);
-    padding: 20px;
-}
-.message{
+    box-shadow: 2px 2px 20px orange;
+    /* background-color: rgb(250, 151, 94); */
+    margin: auto;
+    border-radius: 10px;
     
-    max-width: 300px;
-    position: relative;
-    padding: 20px; 
-    border-radius: 4px; 
-    margin-bottom: 40px;
-}
-.incoming{
-    background-color: rgb(146, 189, 190);
 
 }
-.outgoing{
+
+.header h1
+{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.body
+{
+    flex: 1;
+    color: white;
+    background-color: whitesmoke;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+    
+}
+
+.message
+{
+    background-color: rgb(26, 182, 243);
+    padding: 10px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    border-bottom: 15px;
+    
+
+}
+
+.user
+{
+    margin-left: auto;
+    background-color:rgb(114, 190, 0);
+    color: white;
+}
+
+.footer form
+{
+    display: flex;
+
+}
+
+form input
+{
+    flex: 1;
+    height: 30px;
+    border:none;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+    background-color:white;
+    box-shadow: 2px 2px 20px rgb(12, 12, 12);
+    /* padding-right: 50px; */
+}
+
+form button
+{
+    width: 70px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: rgb(116, 194, 0);
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+    
+}
+
+form button:hover
+{
+    background-color: rgb(67, 110, 2);
+    transition: linear;
+    transition-duration: 0.2s;
+
+}
+
+.pad
+{
+    padding: 5px;
+}
+
+.logo
+{
+    width: 70px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.navbar
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav
+{
+    flex: 1;
+    text-align: left;
+}
+
+nav ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+.send
+{
+    width: 33px;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: snow;
+    padding: 2px;
+}
+
     background-color: rgb(42, 162, 167);
    margin-left: auto;
 }
